@@ -74,3 +74,109 @@ The project uses an SQLite database `travel.sqlite`, which includes tables such 
 - Maintain Quality & Safety: Profitability should not come at the expense of customer experience or regulatory compliance.
 
 ---
+# vendor Performance Analysis - Retail Inventory & Sales
+
+_Analyzing vendor efficiency and profitability to  support strategic decision in purchasing and inventory management._
+
+---
+
+# Overview
+This project evaluates vendor performance and retail inventory dynamics to drive strategic insights for purchasing, pricing, and inventory optimization. A complete data pipeline was built using SQL for ETL, Python for analysis and hypothesis testing.
+
+---
+# Business Problem
+Effective inventory and sales management are critical in the retail sector. This project aims to:
+-Identify underforming brands needing pricing or promotional adjustments
+-Determine vendor contributes to sales and profits
+-Analyze the cost-benefit of bulk purchasing 
+-Investigate inventory turnover inefficiencies
+-Statistically validate differences in vendor profitability
+
+
+---
+
+# Dataset
+
+-Multiple CSV files located in `/data/` folder (sales, vendors, inventory)
+-Summary table created from ingested data and used for analysis
+
+---
+
+# Tools and Technology
+
+-SQL (CTE, Joins, Filtering)
+-Python (Pandas, Matplotlib, Seaborn)
+-Github
+
+---
+# Project Structure
+```
+vendor-Performance-analysis/
+├── README.md/ 
+├── scripts/ # Python scripts for ingestion and     analysis
+│ ├── ingestion_db.py
+│ └── get_vendor_summary.py
+├── code/ 
+│ ├── exploratory_data_analysis.ipynb
+│ └── vender_performance_analysis.ipynb
+├── report/ 
+├── requirements.txt 
+
+```
+---
+# Data Cleaning and Preparation<
+
+-Remove transactions with
+  -Gross Profit <0
+  -Profit Margin <0
+  -Salles Quantity <0
+-Created summary tables with vendor-level metrics
+-Converted data types, handled outliers
+
+---
+# Exploratory Data Analysis
+
+**Negative or Zero Values Detected:**
+-Gross Profit : Min -52,002.78 (LOSS)
+-Profit Margin : Min -∞ (Sales at zero)
+-Unsold Inventory : Indicating slow-moving stock
+
+**Correlation Analysis**
+-Strong between Purchase Quantity and Sales Quantity(0.99)
+-Weak between  Purchase Quantity and Profit
+-Negative between Profit Margin and Sales Price(-0.179)
+
+---
+# Key Findings 
+
+- **Brands for Promotions**: 198 brands with low sales but high profit margins
+- **Top Venders**: Top 10 venders equals to 65.69% of purchases. This infers risk of over-reliance.
+-**Bulk Purchasing Impact**: 72% cost savings per unit in large orders
+-**Inventory Turnover**: $2.71M worth of unsold inventory
+-**Vender Probitability** 
+    -High Vendors : Mean Margin = 31.17%
+    -Low Vendors  : Mean Margin = 41.55%
+-**Hypothesis Testing** Statistically significant difference in profit margin --> distinct vensors Strategies
+
+
+
+---
+#  Recommendations
+-Diversify vendor base to reduce risk 
+-Optimize bulk order strategies
+-Reprice slow-moving, high-margin brands 
+-Clear unsold inventory strategically 
+-Improve marketing for underforming vendors
+
+---
+
+**Dilli Adhikari**  
+📧 Email: [d.adhikari2049@gmail.com](mailto:d.adhikari2049@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/dilip-adhikari/](https://www.linkedin.com/in/dilip-adhikari/)
+
+
+
+
+
+
+
