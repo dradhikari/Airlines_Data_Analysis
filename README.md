@@ -28,11 +28,14 @@ To maintain profitability without sacrificing passenger satisfaction or safety, 
 
 The project uses an SQLite database `travel.sqlite`, which includes tables such as:
 
+- `aircraft_data` – Aircraft Code, model, range
+- `airports_data` – Airport code, airport name, city, Coordinates, Time zone
+- `boarding_passes` – Ticket number, flight ID, boarding number, seat number
 - `bookings` – Booking reference, total amount, and booking date
-- `tickets` – Ticket-level info including fare conditions
+- `tickets` – Ticket-level info, including fare conditions
 - `flights` – Flight IDs and aircraft info
 - `ticket_flights` – Mapping tickets to flights
-- `seats` – Seat configuration per aircraft
+- `seats` - Aircraft code, seat number, fare conditions
 
 ---
 
@@ -53,6 +56,7 @@ The project uses an SQLite database `travel.sqlite`, which includes tables such 
 - Computes total revenue per aircraft by joining `ticket_flights` and `flights`.
 - Derives a new metric: `Inc Total Annual Turnover`.
 .
+---
 
 ## Key Findings
 
@@ -61,11 +65,12 @@ The project uses an SQLite database `travel.sqlite`, which includes tables such 
 - Certain fare classes show higher revenue potential, especially during peak periods.
 - Several aircraft types consistently underperform in both occupancy and revenue.
 
+---
+
 ## Recommendations
-- Revise Pricing Strategy: Adjust pricing based on aircraft capacity, demand, and fare condition. Avoid both underpricing (loss) and overpricing (discouraging customers).
-- Target Occupancy Optimization: Focus on increasing occupancy of medium-sized aircraft with optimal fare plans.
+- Revise Pricing Strategy: Adjust pricing based on aircraft capacity, demand, and fare conditions. Avoid both underpricing (loss) and overpricing (discouraging customers).
+- Target Occupancy Optimization: Focus on increasing the occupancy of medium-sized aircraft with optimal fare plans.
 - Dynamic Pricing: Implement seasonal pricing based on booking trends and aircraft performance.
-- Fleet Adjustment: Consider phasing out consistently underperforming aircraft types or routes.
 - Maintain Quality & Safety: Profitability should not come at the expense of customer experience or regulatory compliance.
 
-
+---
