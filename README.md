@@ -1,4 +1,4 @@
-# ✈✈️ Airline Revenue & Occupancy Analysis
+# ✈️ Airline Revenue & Occupancy Analysis
 
 ---
 
