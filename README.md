@@ -56,16 +56,16 @@ The project uses an SQLite database `travel.sqlite`, which includes tables such 
 
 ## Key Findings
 
--Some aircraft have significantly more seats but lower occupancy, leading to revenue loss.
--Ticket sales and revenue vary greatly by month and aircraft type.
--Certain fare classes show higher revenue potential, especially during peak periods.
--Several aircraft types consistently underperform in both occupancy and revenue.
+- Some aircraft have significantly more seats but lower occupancy, leading to revenue loss.
+- Ticket sales and revenue vary greatly by month and aircraft type.
+- Certain fare classes show higher revenue potential, especially during peak periods.
+- Several aircraft types consistently underperform in both occupancy and revenue.
 
 ## Recommendations
--Revise Pricing Strategy: Adjust pricing based on aircraft capacity, demand, and fare condition. Avoid both underpricing (loss) and overpricing (discouraging customers).
--Target Occupancy Optimization: Focus on increasing occupancy of medium-sized aircraft with optimal fare plans.
--Dynamic Pricing: Implement seasonal pricing based on booking trends and aircraft performance.
--Fleet Adjustment: Consider phasing out consistently underperforming aircraft types or routes.
--Maintain Quality & Safety: Profitability should not come at the expense of customer experience or regulatory compliance.
+- Revise Pricing Strategy: Adjust pricing based on aircraft capacity, demand, and fare condition. Avoid both underpricing (loss) and overpricing (discouraging customers).
+- Target Occupancy Optimization: Focus on increasing occupancy of medium-sized aircraft with optimal fare plans.
+- Dynamic Pricing: Implement seasonal pricing based on booking trends and aircraft performance.
+- Fleet Adjustment: Consider phasing out consistently underperforming aircraft types or routes.
+- Maintain Quality & Safety: Profitability should not come at the expense of customer experience or regulatory compliance.
 
 
